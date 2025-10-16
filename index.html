@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Digital Portfolio</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #222;
+      --accent: #111;
+      --muted: #888;
+      --border: #e5e5e5;
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: -2px;
+    }
+    header p {
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: 1px;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+      color: var(--accent);
+    }
+    .works {
+      display: grid;
+      gap: 1.7rem 1rem;
+      grid-template-columns: 1fr;
+    }
+    .work {
+      border: 1px solid var(--border);
+      padding: 1.2rem 1rem;
+      border-radius: 8px;
+      background: #fcfcfc;
+      transition: box-shadow 0.2s;
+    }
+    .work:hover {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .work-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .work-description {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+    .work-link {
+      text-decoration: underline;
+      color: var(--accent);
+      font-size: 0.95rem;
+      word-break: break-all;
+    }
+    .contact-info {
+      padding: 1.2rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #f7f7f7;
+      margin-top: 1.7rem;
+      color: #444;
+    }
+    @media (min-width: 620px) {
+      .works {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Digital Portfolio – Salesforce Developer & Project Innovator</p>
+    <nav>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="works">
+      <div class="section-title">Works / Projects</div>
+      <div class="works">
+        <div class="work">
+          <div class="work-title">OJT Attendance Monitoring Tracker</div>
+          <div class="work-description">
+            Automated attendance and task monitoring system for supervising trainees in real time.
+          </div>
+          <a class="work-link" href="#" target="_blank">View Project</a>
+        </div>
+        <div class="work">
+          <div class="work-title">hEAR-me – Hearing Assist App</div>
+          <div class="work-description">
+            A cross-platform app for real-time translation and sign-language tutorials to support people with hearing disabilities.
+          </div>
+          <a class="work-link" href="#" target="_blank">View Project</a>
+        </div>
+        <div class="work">
+          <div class="work-title">Kiffit – Minimalist Mobile Interface</div>
+          <div class="work-description">
+            A minimalist navigation system for mobile devices with limited buttons and accessibility features.
+          </div>
+          <a class="work-link" href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Repeat blocks to add more projects -->
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-title">Contact</div>
+      <div class="contact-info">
+        <p><b>Email:</b> your.email@example.com</p>
+        <p><b>LinkedIn:</b> linkedin.com/in/yourlinkedin</p>
+        <p><b>Phone:</b> (123) 456-7890</p>
+        <!-- Add more contact details if necessary -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
