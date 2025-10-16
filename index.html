@@ -64,32 +64,32 @@
       padding-left: 0.5rem;
       color: var(--accent);
     }
-    .works {
+    .designs, .projects {
       display: grid;
       gap: 1.7rem 1rem;
       grid-template-columns: 1fr;
     }
-    .work {
+    .design, .project {
       border: 1px solid var(--border);
       padding: 1.2rem 1rem;
       border-radius: 8px;
       background: #fcfcfc;
       transition: box-shadow 0.2s;
     }
-    .work:hover {
+    .design:hover, .project:hover {
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
-    .work-title {
+    .design-title, .project-title {
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 0.4rem;
     }
-    .work-description {
+    .design-description, .project-description {
       color: var(--muted);
       font-size: 0.95rem;
       margin-bottom: 0.6rem;
     }
-    .work-link {
+    .design-link, .project-link {
       text-decoration: underline;
       color: var(--accent);
       font-size: 0.95rem;
@@ -104,7 +104,7 @@
       color: #444;
     }
     @media (min-width: 620px) {
-      .works {
+      .designs, .projects {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -112,47 +112,74 @@
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Digital Portfolio – Salesforce Developer & Project Innovator</p>
+    <h1>Malvin Jonas B. Lascnao</h1>
+    <p>Digital Portfolio – UI/UX Designer</p>
     <nav>
-      <a href="#works">Works</a>
+      <a href="#projects">Projects</a>
+      <a href="#designs">Designs</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
   <main>
-    <section id="works">
-      <div class="section-title">Works / Projects</div>
-      <div class="works">
-        <div class="work">
-          <div class="work-title">OJT Attendance Monitoring Tracker</div>
-          <div class="work-description">
-            Automated attendance and task monitoring system for supervising trainees in real time.
+    <section id="projects">
+      <div class="section-title">Projects</div>
+      <div class="projects">
+        <div class="project">
+          <div class="project-title">hEAR-me – Hearing Assist App</div>
+          <div class="project-description">
+            A mobile app for real-time translation and sign-language tutorials to support people with hearing disabilities.
           </div>
-          <a class="work-link" href="#" target="_blank">View Project</a>
+          <a class="project-link" href="https://www.figma.com/design/AJKwqDWx2A3uZQJI6y2WK2/hEAR-me?node-id=0-1&t=EJq8BhzO6Vs1HPBS-1" target="_blank">View Project</a>
         </div>
-        <div class="work">
-          <div class="work-title">hEAR-me – Hearing Assist App</div>
-          <div class="work-description">
-            A cross-platform app for real-time translation and sign-language tutorials to support people with hearing disabilities.
+
+        <div class="project">
+          <div class="project-title">Tasebuds – Digital Recipe Book App</div>
+          <div class="project-description">
+            A Mobile Pastry and Dessert Recipe Book and Social Media Application for Pastry and Dessert Enthusiasts
           </div>
-          <a class="work-link" href="#" target="_blank">View Project</a>
+          <a class="project-link" href="https://www.figma.com/design/IvD4pOQBHqyNOFio6h1O8j/Tastebuds?node-id=0-1&t=jTqPcvTaKCwang11-1" target="_blank">View Project</a>
         </div>
-        <div class="work">
-          <div class="work-title">Kiffit – Minimalist Mobile Interface</div>
-          <div class="work-description">
-            A minimalist navigation system for mobile devices with limited buttons and accessibility features.
+
+        <div class="project">
+          <div class="project-title">KidSync – Minimalist Mobile Interface</div>
+          <div class="project-description">
+            A Smart Student Drop-off and Pick-up Verification with SMS Notification and Attendance Monitoring System for Einstein School for Kids
           </div>
-          <a class="work-link" href="#" target="_blank">View Project</a>
+          <a class="project-link" href="https://ksync.netlify.app/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Coffeetory – Point-Of-Sale and Inventory Management</div>
+          <div class="project-description">
+            A Web-Based Point-of-Sale and Inventory Management System with an Integrated Ingredient Allocation System for World Coffee Cainta
+          </div>
+          <a class="project-link" href="https://www.figma.com/design/ZTWaIe860LPsCzY34VfKaV/Coffeetory---Prototype?node-id=0-1&t=QPsXYjJ46Lm6dHja-1" target="_blank">View Project</a>
         </div>
         <!-- Repeat blocks to add more projects -->
       </div>
     </section>
+    
+    <br>
+
+    <section id="designs">
+      <div class="section-title">Other Designs</div>
+      <div class="designs">
+        <div class="design">
+          <div class="design-title">Personal Research – UX Patterns</div>
+          <div class="design-description">An ongoing collection of micro-interaction patterns and UI explorations.</div>
+          <a class="design-link" href="#">Details</a>
+        </div>
+      </div>
+    </section>
+    
+    <br>
+
     <section id="contact">
       <div class="section-title">Contact</div>
       <div class="contact-info">
-        <p><b>Email:</b> your.email@example.com</p>
-        <p><b>LinkedIn:</b> linkedin.com/in/yourlinkedin</p>
-        <p><b>Phone:</b> (123) 456-7890</p>
+        <p><b>Email:</b> lascanomalvinjonas@gmail.com</p>
+        <p><b>LinkedIn:</b> www.linkedin.com/in/lascanomalvinjonas</p>
+        <p><b>Mobile Phone:</b> +63 995 332 3055</p>
         <!-- Add more contact details if necessary -->
       </div>
     </section>
